@@ -18,6 +18,22 @@ body{
 .pizarra-on{
   background-image: url('../img/texture.jpg');
   height: 500vh;
+  display: inherit;
+}
+.pizarra-off{
+  display: none;
+}
+.text-right{
+  text-align: right;
+}
+.vars{
+  margin-top: 0px;
+  padding: 15px;
+}
+.map{
+  width: 50%;
+  margin: auto;
+  margin-bottom: 400px;
 }
 #title{
   font-family: "BillabongW00-Regular";
@@ -28,16 +44,26 @@ body{
   padding-top: 35vh;
   line-height: 100px;
 }
-.fixed-div{
+/*.fixed-div{
   position: fixed;
   width: 100%;
-}
+}*/
 #subtitle{
   font-family: "FrontageW00-Regular";
   color: white;
   font-size: 20px;
   text-align: center;
   margin: 0px;
+}
+.ivars{
+  font-size: 25px!important;
+  color: white;
+  display: block!important;
+  padding: 10px;
+}
+.imap{
+  font-size: 40px!important;
+  color: white;
 }
 nav{
   margin: auto;
@@ -48,13 +74,13 @@ a{
   list-style: none;
   font-size: 60px;
 }
-.fa:hover{
+nav>ul>li>a>.fa:hover{
   background-color: #6bc7fb;
 }
 li{
   display: inline-block;
 }
-.fa{
+nav>ul>li>a>.fa{
   color: white;
   padding: 15px;
   border-radius: 15px;
