@@ -1,0 +1,64 @@
+body{
+  /*background-size: contain;*/
+  /*background-repeat: repeat-y;*/
+  margin: 0px;
+  padding: 0px;
+}
+#img-pto{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -3;
+}
+#pto{
+  /*background-image: url('../img/ptoGaitan.jpg');*/
+  width: 100%;
+  height: 100vh;
+}
+.pizarra-on{
+  background-image: url('../img/texture.jpg');
+  height: 500vh;
+}
+#title{
+  font-family: "BillabongW00-Regular";
+  color: white;
+  text-align: center;
+  font-size: 150px;
+  margin: 0px;
+  padding-top: 35vh;
+  line-height: 100px;
+}
+.fixed-div{
+  position: fixed;
+  width: 100%;
+}
+#subtitle{
+  font-family: "FrontageW00-Regular";
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: 0px;
+}
+nav{
+  margin: auto;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  list-style: none;
+  font-size: 60px;
+}
+.fa:hover{
+  background-color: #6bc7fb;
+}
+li{
+  display: inline-block;
+}
+.fa{
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid white;
+  height: 70px;
+  width: 70px;
+}
