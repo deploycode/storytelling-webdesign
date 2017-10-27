@@ -15,9 +15,14 @@ body{
   width: 100%;
   height: 100vh;
 }
+#tracesvg{
+  position: absolute;
+  left: calc(50% - 623px);
+  z-index: 610;
+}
 .pizarra-on{
   background-image: url('../img/texture.jpg');
-  height: 500vh;
+  height: 200vh;
   display: inherit;
 }
 .pizarra-off{
@@ -26,14 +31,20 @@ body{
 .text-right{
   text-align: right;
 }
+.text-center{
+  text-align: center;
+}
 .vars{
   margin-top: 0px;
   padding: 15px;
 }
 .map{
-  width: 50%;
+  width: 600px;
   margin: auto;
-  margin-bottom: 400px;
+}
+.route{
+  width: 100%;
+  height: 400px;
 }
 #title{
   font-family: "BillabongW00-Regular";
@@ -55,6 +66,15 @@ body{
   text-align: center;
   margin: 0px;
 }
+#point2{
+  margin-top: 565px;
+}
+#point3{
+  margin-top: 965px;
+}
+#point4{
+  margin-top: 1365px;
+}
 .ivars{
   font-size: 25px!important;
   color: white;
@@ -64,6 +84,7 @@ body{
 .imap{
   font-size: 40px!important;
   color: white;
+  position: absolute;
 }
 nav{
   margin: auto;

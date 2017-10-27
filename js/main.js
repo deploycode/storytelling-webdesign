@@ -7,4 +7,6 @@ function myFunction(){
   $('body, html').animate({
     scrollTop: alto
   }, 1000);
+  // $('#tracesvg').css({'top':alto});
+
 };
