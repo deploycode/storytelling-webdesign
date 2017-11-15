@@ -4,6 +4,11 @@ body{
   margin: 0px;
   padding: 0px;
 }
+#btn_start{
+  color: white;
+  font-size: 28px;
+  font-family: "FrontageW00-Regular";
+}
 #img-pto{
   width: 100%;
   height: 100vh;
@@ -22,7 +27,7 @@ body{
 }
 .pizarra-on{
   background-image: url('../img/texture.jpg');
-  height: 200vh;
+  height: 250vh;
   display: inherit;
 }
 .pizarra-off{
@@ -36,6 +41,9 @@ body{
 }
 .vars{
   margin-top: 0px;
+  padding: 15px;
+}
+.variables{
   padding: 15px;
 }
 .map{
@@ -84,7 +92,7 @@ body{
 .imap{
   font-size: 40px!important;
   color: white;
-  position: absolute;
+  /*position: absolute;*/
 }
 nav{
   margin: auto;
@@ -108,4 +116,37 @@ nav>ul>li>a>.fa{
   border: 1px solid white;
   height: 70px;
   width: 70px;
+}
+.s0{
+  margin-bottom: 20px;
+}
+.s1{
+  margin-bottom: 30px;
+}
+.s2{
+  margin-bottom: 40px;
+}
+.s3{
+  margin-bottom: 50px;
+}
+.s4{
+  margin-bottom: 60px;
+}
+.s5{
+  margin-bottom: 70px;
+}
+.s6{
+  margin-bottom: 80px;
+}
+.s7{
+  margin-bottom: 90px;
+}
+.s8{
+  margin-bottom: 100px;
+}
+.s9{
+  margin-bottom: 110px;
+}
+.s10{
+  margin-bottom: 120px;
 }

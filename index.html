@@ -1,49 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
   <head>
     <meta charset="utf-8">
     <title></title>
+    <!-- angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link href="//db.onlinewebfonts.com/c/effd74cbf0d7ec814ef5b5c8b44e0988?family=VeneerW01-Two" rel="stylesheet" type="text/css"/>
     <link href="//db.onlinewebfonts.com/c/c6a49f48435e233cf7bf3df915f168fd?family=California" rel="stylesheet" type="text/css"/>
     <link href="//db.onlinewebfonts.com/c/6d32b8e06f40fb7698cfb714b9e7975d?family=BillabongW00-Regular" rel="stylesheet" type="text/css"/>
     <link href="//db.onlinewebfonts.com/c/bc146f36f662e7bb6c1906010fd29ff5?family=FrontageW00-Regular" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="js/controller.js" charset="utf-8"></script>
   </head>
-  <body>
+  <body ng-controller="myController">
     <section id="pto">
       <img src="img/background-pto-gaitan.jpg" alt="" id="img-pto">
       <div class="fixed-div">
         <p id="title">Puerto Gaitán</p>
-        <p id="subtitle">Selecciona un medio para empezar</p>
+        <!-- <p id="subtitle">Selecciona un medio para empezar</p> -->
         <nav>
           <ul>
-            <li><a href="#" onclick="myFunction()"><i class="fa fa-plane" aria-hidden="true"></i></a></li>
-            <li><a href="#" onclick="myFunction()"><i class="fa fa-bus" aria-hidden="true"></i></a></li>
-            <li><a href="#" onclick="myFunction()"><i class="fa fa-car" aria-hidden="true"></i></a></li>
+            <li><a href="#" onclick="myFunction()" id="btn_start">Empezar</a></li>
           </ul>
         </nav>
       </div>
     </section>
     <section id="pizarra" class="pizarra-off">
-      <p class="text-right vars">
-        <a href="index.html"><i class="fa fa-undo ivars" aria-hidden="true"> undo</i></a>
-        <i class="fa fa-sun-o ivars" aria-hidden="true" > weather</i>
-        <i class="fa fa-clock-o ivars" aria-hidden="true" > 02':00'':00</i>
+      <ul class="text-right variables">
+        <a href="index.html"><i class="fa fa-undo ivars" aria-hidden="true"> Recargar</i></a>
+        <li ng-repeat="var in vars" class="ivars fa {{ var.icon }}">
+          {{var.name}} - {{ var.value }}
+        </li>
+      </ul>
+      <p ng-repeat="point in points">
+        <br> <i class="fa fa-map-marker imap {{ point.location }}" aria-hidden="true"> {{ point.name}}</i>
       </p>
-      <p class="map text-center">
-        <i class="fa fa-map-marker imap" aria-hidden="true"> point 1</i>
-      </p>
-      <p class="map">
-        <i class="fa fa-map-marker imap" aria-hidden="true" id="point2"> point 2</i>
-      </p>
-      <p class="map text-center">
-        <i class="fa fa-map-marker imap" aria-hidden="true" id="point3"> point 2</i>
-      </p>
-      <p class="map text-center">
-        <i class="fa fa-flag-checkered imap" aria-hidden="true" id="point4"> final point</i>
-      </p>
-      <svg version="1.1" id="tracesvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1031px" height="1500px" viewBox="0 0 1031 1500" enable-background="new 0 0 1031 3544" xml:space="preserve">
+      <!-- <svg version="1.1" id="tracesvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1031px" height="1500px" viewBox="0 0 1031 1500" enable-background="new 0 0 1031 3544" xml:space="preserve">
       		<path id="p1" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-miterlimit="0" d="M845,14.04
       		c94.488-0.933,147.798,113.116,61,198.96c-112.197,110.964-250.383,70.569-402,133c-110.712,45.587-171.223,130.125-158.981,201.27" style="stroke-dasharray: 977.678px; stroke-dashoffset: 0px; visibility: visible;"></path>
       		<path id="p2" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" d="M395.214,636.783
@@ -51,7 +44,7 @@
       		<path id="p3" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" d="M719,1080.551
       		C685.436,1165,677,1284,735,1326c47.015,34.045,115.498,12.164,131-45c16-59-23-111-88-112c-84.843-1.306-125.168,89.977-138.98,151
       		c-15.885,70.191,14.48,139.643,57.16,193.202" style="stroke-dasharray: 1021.02px; stroke-dashoffset: 794px; visibility: visible;"></path>
-      </svg>
+      </svg> -->
     </section>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>

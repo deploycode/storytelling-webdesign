@@ -10,3 +10,6 @@ function myFunction(){
   // $('#tracesvg').css({'top':alto});
 
 };
+// function spacePoints(space){
+//   $(".imap").css('margin-bottom':$space ';');
+// }
