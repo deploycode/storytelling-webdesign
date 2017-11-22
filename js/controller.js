@@ -47,3 +47,4 @@
      $scope.comentarios.push($scope.newComentario);
      $scope.newComentario={};
    }
+ });
